@@ -17,7 +17,7 @@ import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.message.BasicHeader;
 import org.apache.tools.ant.taskdefs.XSLTProcess.Param;
 import org.kohsuke.stapler.DataBoundConstructor;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 import org.kohsuke.stapler.QueryParameter;
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;
@@ -140,7 +140,7 @@ public class BeaglePlugin extends Builder implements SimpleBuildStep {
     		return "Trigger Beagle Penetration Testing";
 		}
 
-		public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
+		public boolean configure(StaplerRequest2 req, JSONObject formData) throws FormException {
     		gatoken = Secret.fromString(formData.getString("gaccesstoken"));
     		save();
     		return super.configure(req,formData);

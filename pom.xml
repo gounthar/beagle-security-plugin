@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.64</version>
+        <version>5.18</version>
         <relativePath />
     </parent>
     <artifactId>beagle-security</artifactId>
@@ -15,18 +15,11 @@
         <maven.javadoc.skip>true</maven.javadoc.skip>
         <skipTests>true</skipTests>
         <pmd.skip>true</pmd.skip>
-        <jenkins.version>2.401.1</jenkins.version>
+        <jenkins.version>2.492.3</jenkins.version>
     </properties>
     <name>Beagle Security</name>
     <description>This plugin will trigger Beagle Security test</description>
     <url>https://wiki.jenkins.io/display/JENKINS/Beagle+Security+Plugin</url>
-    <developers>
-        <developer>
-            <id>rejah</id>
-            <name>Rejah Rehim</name>
-            <email>rejah.rehim@gmail.com</email>
-        </developer>
-    </developers>
     <licenses>
         <license>
             <name>MIT License</name>
@@ -34,7 +27,7 @@
         </license>
     </licenses>
     <scm>
-        <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
+        <connection>scm:git:https://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
         <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
         <url>https://github.com/jenkinsci/${project.artifactId}-plugin</url>
       <tag>HEAD</tag>
